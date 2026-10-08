@@ -5,14 +5,14 @@
 配信の録画や切り抜き動画から、字幕（SRT ファイル）を自動で作ります。できた字幕はアプリの中で確認・修正でき、字幕を読み込めない編集ソフト向けに「テロップ動画」にすることもできます。
 文字起こしは PC の中だけで行います。動画や音声をインターネットに送ることはありません。無料で使えます。
 
-**[⬇ ダウンロード（0.2.0-beta.2）](https://github.com/oden06/SubtitleApp-releases/releases/tag/v0.2.0-beta.2)**　｜　[使い方のくわしい説明](#字幕を作る)　｜　[困ったとき](#うまくいかないとき)　｜　[不具合の報告](https://github.com/oden06/SubtitleApp-releases/issues)
+**[⬇ ダウンロード（0.2.0-beta.3）](https://github.com/oden06/SubtitleApp-releases/releases/tag/v0.2.0-beta.3)**　｜　[使い方のくわしい説明](#字幕を作る)　｜　[困ったとき](#うまくいかないとき)　｜　[不具合の報告](https://github.com/oden06/SubtitleApp-releases/issues)
 
 ---
 
 ## クイックスタート（3 ステップ）
 
 **1. ダウンロードして起動する**
-[ダウンロードのページ](https://github.com/oden06/SubtitleApp-releases/releases/tag/v0.2.0-beta.2)で `SubtitleApp-0.2.0-beta.2.exe` をクリックしてダウンロードし、ダブルクリックで起動します。**インストールは不要**です。
+[ダウンロードのページ](https://github.com/oden06/SubtitleApp-releases/releases/tag/v0.2.0-beta.3)で `SubtitleApp-0.2.0-beta.3.exe` をクリックしてダウンロードし、ダブルクリックで起動します。**インストールは不要**です。
 青い「Windows によって PC が保護されました」の画面が出たら、**「詳細情報」→「実行」** を押します（[くわしく](#windows-によって-pc-が保護されましたと出たとき)）。
 
 **2. 動画をドラッグ＆ドロップする**
@@ -83,8 +83,8 @@ Premiere Elements のように字幕ファイルを読み込めない編集ソ�
 
 ## ダウンロードと起動（インストールは不要です）
 
-1. [ダウンロードのページ](https://github.com/oden06/SubtitleApp-releases/releases/tag/v0.2.0-beta.2)を開きます（右側の「Releases」からも開けます）。
-2. `SubtitleApp-0.2.0-beta.2.exe` をクリックしてダウンロードします。
+1. [ダウンロードのページ](https://github.com/oden06/SubtitleApp-releases/releases/tag/v0.2.0-beta.3)を開きます（右側の「Releases」からも開けます）。
+2. `SubtitleApp-0.2.0-beta.3.exe` をクリックしてダウンロードします。
 3. ダウンロードした exe を、分かりやすい場所（例: デスクトップや「ドキュメント」の中に作ったフォルダー）に移します。
 4. exe をダブルクリックして起動します。インストールの画面はありません。この exe だけで動きます。
    - 初めて起動するときは、必要なファイルを展開するため、ウィンドウが出るまで少し時間がかかります。
@@ -106,7 +106,7 @@ Premiere Elements のように字幕ファイルを読み込めない編集ソ�
 Releases にある `.sha256` ファイルの中の文字列と、次のコマンドの結果が同じなら、ダウンロードしたファイルは本物です。
 
 ```powershell
-Get-FileHash SubtitleApp-0.2.0-beta.2.exe -Algorithm SHA256
+Get-FileHash SubtitleApp-0.2.0-beta.3.exe -Algorithm SHA256
 ```
 
 ---
@@ -233,6 +233,7 @@ Get-FileHash SubtitleApp-0.2.0-beta.2.exe -Algorithm SHA256
 | 初めての文字起こしが進まない | 音声認識のデータ（約 550MB）をダウンロードしています。インターネットにつながっているか確認して、しばらく待ってください。 |
 | 「このファイルは開けません」と出る | Windows で再生できない形式の可能性があります（例: Ogg Vorbis）。MP4 や WAV に変換してから試してください。 |
 | 固有名詞が違う文字になる | 「固有名詞辞書」で正しいゲームを選び、言葉を登録してください。字幕を直して「辞書に追加」すると、次から自動で直ります。 |
+| BGM や効果音を入れて編集した動画で、言っていない言葉が出る・字幕が早く出る | BGM を入れる前の録画（配信の録画データ）で字幕を作ると、正確になります。 |
 | 字幕の出るタイミングが少しずれる | 同じ言葉を連続で言ったとき（例: 「ジョン！ジョン！」）などは、ずれることがあります。 |
 | テロップの折り返しが変な位置になる | 「装飾」の「1 行の幅」を広げてください。 |
 
